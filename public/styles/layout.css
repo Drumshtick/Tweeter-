@@ -32,6 +32,13 @@ main {
   overflow: hidden;
 }
 
-.container {
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+}
 
+.flex-container-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
