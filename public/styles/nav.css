@@ -12,15 +12,8 @@ nav {
   left: 0;
 }
 
-nav .logo {
+.bungee {
   font-family: 'Bungee', sans-serif; /* LOGO ONLY (Bungee) */
-  font-size: 34px;
-}
-
-.flex-container-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .red-icon {
