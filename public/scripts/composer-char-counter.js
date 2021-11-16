@@ -6,9 +6,9 @@ $(document).ready(function() {
 
     const charCounter = $( this ).parent().children( 'div' ).children( '.counter' );
 
-    let charAmount = $( this ).val().length;
+    const charAmount = $( this ).val().length;
 
-    let remainingChar = charMax - charAmount;
+    const remainingChar = charMax - charAmount;
 
     charCounter.val(remainingChar);
 
