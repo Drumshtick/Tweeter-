@@ -25,10 +25,10 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-main {
+main.container {
   width: 90%;
   height: auto;
-  margin: 0 5% 0 5%;
+  margin: 1em 5% 0 5%;
   overflow: hidden;
 }
 
