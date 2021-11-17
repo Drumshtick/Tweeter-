@@ -26,6 +26,9 @@
     <!-- New Tweet CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
 
+    <!-- New Tweet CSS -->
+    <link rel="stylesheet" href="/styles/new-tweet-error.css" type="text/css"/>
+
     <!-- Tweets CSS -->
     <link rel="stylesheet" href="/styles/display-tweets.css" type="text/css"/>
 
@@ -62,7 +65,14 @@
   </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <!-- Form for creating a  new tweet -->
       <section class="new-tweet">
+        <section id="new-tweet-error">
+          <div class="error-container flex-container-row">
+            <i class="text-red fas fa-exclamation-circle"></i>
+            <p id="new-tweet-err-msg" class="text-red"></p>
+          </div>
+        </section>
         <form method="POST" action="/tweets/">
           <label class="tweet-post-label" for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text" ></textarea>
@@ -72,6 +82,7 @@
           </div>
         </form>
       </section>
+      <!-- Tweets in the database will display here -->
       <section id="tweets-container">
       </section>
     </main>
