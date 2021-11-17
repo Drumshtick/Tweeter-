@@ -19,7 +19,7 @@ const createTweetElement = (data) => {
                       <p class="handle">${data.user.handle}</p>
                     </header>
                     <section class="tweet-content">
-                      <p>${data.content.text}</p>
+                      <p>${escape(data.content.text)}</p>
                     </section>
                     <footer>
                       <p class="time-created">${timeago.format(data.created_at)}</p>
@@ -72,6 +72,15 @@ const loadNewTweet = () => {
     $( '#tweet-text' ).val('');
     $( 'output.counter' ).val(140);
   });
+};
+/* 
+Function escapes the string inputted by the user to avoid any
+XSS attacks before it is rendered on the page
+*/
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
 };
 
 $( document ).ready(function() {
