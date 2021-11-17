@@ -21,4 +21,13 @@ $(document).ready(function() {
     }
   });
   
+  /*
+  Listen for click on to top button
+  */
+  $( '#scroll-to-new-tweet' ).click(function() {
+    $( '#new-tweet-form' ).slideDown();
+    $( '#tweet-text' ).focus();
+    $( window ).scrollTop();
+  });
+
 });
