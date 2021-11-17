@@ -82,18 +82,45 @@ const escape = function (str) {
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
-
+/*
+Show error container and update the p element
+to contain the inputted error message
+*/
 const newTweetError = (message) => {
   $( '#new-tweet-err-msg' ).text(message);
   $( '#new-tweet-error' ).show();
 };
-
+/*
+Hide error container and reset p to no text
+*/
 const closeNewTweetError = () => {
   $( '#new-tweet-error' ).hide();
   $( '#new-tweet-err-msg' ).text('');
 };
+/*
+Toggle slideUp/SlideDown for create tweet section
+shifts focus to form
+*/
+const toggleCreateTweet = () => {
+  $( '#new-tweet-form' ).slideToggle();
+  $( '#tweet-text' ).focus();
+};
 
 $( document ).ready(function() {
+  /*
+    Listen for click on nav "write new tweet" button
+  */
+  $( 'nav #compose-tweet-btn' ).click(function() {
+    toggleCreateTweet();
+  });
+    /*
+    Listen for click on to top button
+  */
+    $( '#scroll-to-new-tweet' ).click(function() {
+      $( '#new-tweet-form' ).slideDown();
+      $( '#tweet-text' ).focus();
+      $( window ).scrollTop();
+    });
   /*
   Get tweets in database on page load
   */
