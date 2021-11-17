@@ -2,7 +2,8 @@
 // (red bottom corner on scroll)
 
 $(document).ready(function() {
-
+  // When scroll movement is detected hide nav button and show
+  // red button bottom right
   $(window).scroll(function (event) {
     const scroll = $(window).scrollTop();
     if (scroll > 250) {
