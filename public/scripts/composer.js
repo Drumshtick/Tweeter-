@@ -1,5 +1,5 @@
 // Position to start scrolling logic
-const SCROLL_TRIGGER_POINT = 250;
+const SCROLL_TRIGGER_POINT = 150;
 
 //Logic for scroll to create new tweet button 
 // (red bottom corner on scroll)

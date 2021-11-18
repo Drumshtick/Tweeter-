@@ -1,12 +1,17 @@
+$tweet-shadow-color: #C9CAE2;
+$tweeter-handle-color: #C5CBE2;
+$tweet-interact-icon-color: #47569D;
+$tweet-interact-icon-color-hover: #C7992D;
+
 article.tweet {
   padding: 0.5em;
   border: 2px solid black;
-  margin: 0 0.1em 2em;
+  margin: 0 .1em 2em;
   transition: box-shadow 0.25s;
 }
 
 article.tweet:hover {
-  box-shadow: 19px 4px 2px 1px #C9CAE2;
+  box-shadow: 19px 4px 2px 1px $tweet-shadow-color; 
 }
 
 article.tweet header {
@@ -18,10 +23,11 @@ article.tweet header {
 
 article.tweet header div {
   align-items: center;
+
 }
 
 div.profile-pic-username i {
-  margin-right: 0.5em;
+  margin-right: 0.5em
 }
 
 div.profile-pic-username img {
@@ -30,7 +36,7 @@ div.profile-pic-username img {
 }
 
 .handle {
-  color: #C5CBE2;
+  color: $tweeter-handle-color;
 }
 
 p.handle {
@@ -66,10 +72,10 @@ article.tweet footer div {
 
 article.tweet footer div i {
   font-size: 14px;
-  color: #47569D;
+  color: $tweet-interact-icon-color;
   cursor: pointer;
 }
 
 article.tweet footer div i:hover {
-  color: #C7992D;
+  color: $tweet-interact-icon-color-hover;
 }

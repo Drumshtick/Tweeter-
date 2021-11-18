@@ -1,7 +1,10 @@
+$font-color: #FFFFFF;
+$bungee: 'Bungee', sans-serif;
+$tweeter-blue: #4056A1;
 nav {
   height: 120px;
   width: 100%;
-  color: #FFFFFF;
+  color: $font-color;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -10,18 +13,22 @@ nav {
   top: 0;
   left: 0;
   transition: background-color 0.5s;
+  .bungee {
+    font-family: $bungee;
+  }
+  div.flex-container-col {
+    cursor: pointer;
+    i {
+      color: red;
+      animation: bounce 1.5s ease-in-out infinite;
+      animation-direction: alternate-reverse;
+    }
+  }
 }
-nav .bungee {
-  font-family: "Bungee", sans-serif;
-}
-nav div.flex-container-col {
-  cursor: pointer;
-}
-nav div.flex-container-col i {
-  color: red;
-  animation: bounce 1.5s ease-in-out infinite;
-  animation-direction: alternate-reverse;
-}
+
+
+
+
 
 @keyframes bounce {
   from {
@@ -31,8 +38,9 @@ nav div.flex-container-col i {
     transform: translate(0, 8px);
   }
 }
+
 .hide {
-  display: none;
+display: none;
 }
 
 .noBGColor {
@@ -41,5 +49,5 @@ nav div.flex-container-col i {
 }
 
 .blue {
-  background-color: #4056A1;
+  background-color: $tweeter-blue;
 }

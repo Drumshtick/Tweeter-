@@ -1,8 +1,8 @@
+$font-color: #FFFFFF;
 section.new-tweet {
   margin-bottom: 2em;
   display: none;
 }
-
 #tweet-text {
   display: block;
   background: none;
@@ -15,7 +15,6 @@ section.new-tweet {
   width: 100%;
   resize: none;
 }
-
 #tweet-text:focus-visible {
   outline: none;
 }
@@ -24,16 +23,15 @@ section.new-tweet {
   border-radius: 0;
   background-color: #4152A1;
   border: none;
-  color: #FFFFFF;
-  font-size: 0.75em;
+  color: $font-color;
+  font-size: .75em;
   text-align: center;
   cursor: pointer;
 }
-
 .tweet-btn-ctr {
   display: flex;
   justify-content: space-between;
-  margin: 0.5em;
+  margin:  0.5em;
 }
 
 .tweet-post-label {

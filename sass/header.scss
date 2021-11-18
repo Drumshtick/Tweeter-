@@ -1,0 +1,17 @@
+$font-color: #FFFFFF;
+
+header.profile {
+  height: 400px;
+  width: 100%;
+  background-image: url('../images/diagmonds.png');/* From https://www.transparenttextures.com/ */
+  color: $font-color;
+  margin: 120px 0 0 0 ;
+}
+
+header h2 {
+  font-weight: 500;
+}
+
+header b {
+  font-weight: 700;
+}
