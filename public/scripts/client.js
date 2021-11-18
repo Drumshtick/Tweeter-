@@ -89,6 +89,7 @@ to contain the inputted error message
 const newTweetError = (message) => {
   $( '#new-tweet-err-msg' ).text(message);
   $( '#new-tweet-error' ).show();
+  $( '#tweet-text' ).focus();
 };
 /*
 Hide error container and reset p to no text

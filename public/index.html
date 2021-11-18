@@ -35,6 +35,9 @@
     <!-- Scroll btn CSS -->
     <link rel="stylesheet" href="/styles/scroll-up-btn.css" type="text/css"/>
 
+    <!-- Media Queries CSS -->
+    <link rel="stylesheet" href="/styles/media-queries.css" type="text/css"/>
+
     <!-- timeago js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
@@ -59,7 +62,7 @@
       </div>
     </nav>
     <header class="profile flex-container-col">
-      <div>
+      <div class="profile-img-wrapper">
           <img src="/images/profile-hex.png"> 
       </div>
       <br>
@@ -69,8 +72,9 @@
   </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <!-- Form for creating a  new tweet -->
+      <!-- Form container creating a  new tweet -->
       <section id="new-tweet-form" class="new-tweet">
+        <!-- Error message for new tweets -->
         <section id="new-tweet-error">
           <div class="error-container flex-container-row">
             <i class="text-red fas fa-exclamation-circle"></i>

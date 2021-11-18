@@ -1,5 +1,5 @@
 // Position to start scrolling logic
-const SCROLL_POSITION = 300;
+const SCROLL_TRIGGER_POINT = 250;
 
 //Logic for scroll to create new tweet button 
 // (red bottom corner on scroll)
@@ -9,13 +9,13 @@ $(document).ready(function() {
   // red button bottom right
   $(window).scroll(function (event) {
     const scroll = $(window).scrollTop();
-    if (scroll > SCROLL_POSITION) {
+    if (scroll > SCROLL_TRIGGER_POINT) {
       $( 'nav' ).removeClass('blue');
       $( 'nav' ).addClass('noBGColor');
       $( '#compose-tweet-btn' ).removeClass('flex-container-col');
       $( '#compose-tweet-btn' ).addClass('hide');
       $( '#scroll-to-new-tweet' ).fadeIn('fast');
-    } else if (scroll < SCROLL_POSITION) {
+    } else if (scroll < SCROLL_TRIGGER_POINT) {
       $( 'nav' ).addClass('blue');
       $( 'nav' ).removeClass('noBGColor');
       $( '#compose-tweet-btn' ).addClass('flex-container-col');
@@ -30,7 +30,7 @@ $(document).ready(function() {
   $( '#scroll-to-new-tweet' ).click(function() {
     $( '#new-tweet-form' ).slideDown();
     $( '#tweet-text' ).focus();
-    $( window ).scrollTop();
+    $( window ).scrollTop(0);
   });
 
 });
