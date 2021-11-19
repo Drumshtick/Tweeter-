@@ -55,7 +55,6 @@
     <!-- Top nav bar (fixed) -->
     <nav class="blue">
       <span class="bungee">tweeter</span>
-      <!-- flex-container-col -->
       <div id="compose-tweet-btn" class="flex-container-col">
         <span><b>Write</b> a new tweet</span>
         <i class="red-icon fas fa-angle-double-down"></i>
@@ -81,6 +80,7 @@
             <p id="new-tweet-err-msg" class="text-red"></p>
           </div>
         </section>
+        <!-- create new tweet form -->
         <form method="POST" action="/tweets/">
           <label class="tweet-post-label" for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text" ></textarea>
@@ -93,6 +93,7 @@
       <!-- Tweets in the database will display here -->
       <section id="tweets-container">
       </section>
+      <!-- scroll to top (bottom right btn) -->
       <div id="scroll-to-new-tweet">
         <i class="text-red fas fa-arrow-alt-circle-up"></i>
       </div>

@@ -10,26 +10,26 @@ a friendly X days ago time frame
 */
 const createTweetElement = (data) => {
   const newTweet = `
-                  <article class="tweet">
-                    <header class="flex-container-row">
-                      <div class="profile-pic-username flex-container-row">
-                        <img src="${data.user.avatars}"/>
-                        <p>${data.user.name}</p>
-                      </div>
-                      <p class="handle">${data.user.handle}</p>
-                    </header>
-                    <section class="tweet-content">
-                      <p>${escape(data.content.text)}</p>
-                    </section>
-                    <footer>
-                      <p class="time-created">${timeago.format(data.created_at)}</p>
-                      <div>
-                        <i class="fas fa-flag"></i>
-                        <i class="fas fa-retweet"></i>
-                        <i class="fas fa-heart"></i>
-                      </div>
-                    </footer>
-                  </article>
+                    <article class="tweet">
+                      <header class="flex-container-row">
+                        <div class="profile-pic-username flex-container-row">
+                          <img src="${data.user.avatars}"/>
+                          <p>${data.user.name}</p>
+                        </div>
+                        <p class="handle">${data.user.handle}</p>
+                      </header>
+                      <section class="tweet-content">
+                        <p>${escape(data.content.text)}</p>
+                      </section>
+                      <footer>
+                        <p class="time-created">${timeago.format(data.created_at)}</p>
+                        <div>
+                          <i class="fas fa-flag"></i>
+                          <i class="fas fa-retweet"></i>
+                          <i class="fas fa-heart"></i>
+                        </div>
+                      </footer>
+                    </article>
                   `;
   return newTweet;
 };
