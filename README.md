@@ -2,9 +2,9 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-Demonstration of HTML, CSS, JS, jQuery and AJAX front-end skills, and Node, Express back-end skills.
-
 Create a tweet! Post it! View existing tweets in reverse-chronological order. Character counter ensures tweets stay within the alotted amount. Error messages will inform the user if their tweet conforms to the expected standard. Responsive layout keeps the site usable from smart phones to large displays. 
+
+Demonstration of HTML, CSS, JS, jQuery and AJAX front-end skills, and Node, Express back-end skills.
 
 ## Screenshots
 
